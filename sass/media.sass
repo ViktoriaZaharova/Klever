@@ -1,16 +1,133 @@
-/*==========  Desktop First  ==========*/
+/*==========	Desktop First	==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1300px)
+	body
+		&:before
+			width: 616px
+			height: 648px
+		&::after
+			width: 1040px
+			height: 733px
+
+	.home-content
+		min-width: 540px
+		margin: 0 0 0 -30px
+		border-radius: 40px
+		padding: 60px 60px 30px
+
+	.home-slider
+		width: calc(100% - 540px + 60px)
+
 @media only screen and (max-width: 1200px)
+	.home-wrapper
+		padding: 30px 0
+
+	.container-fluid, .container
+		padding: 0 30px
+
+	.home-slider
+		margin: 0 0 0 -30px
+		&__logo
+			padding: 0 0 0 30px
+		.slick-dots
+			padding: 0 30px 0 0
+
+	.logo-home
+		margin: 0 0 60px
 
 @media only screen and (max-width: 992px)
+	.home-wrapper
+		flex-direction: column
+		align-items: flex-start
+	.home-content
+		min-width: auto
+		width: 100%
+		margin: 0
+		padding: 30px
+		&__wrapper
+			max-width: none
+			margin: 0
+
+	.form-footer
+		margin: 30px 0 0
+
+	.home-slider
+		order: 1
+		width: 100%
+		margin: 20px 0 0
+		border-radius: 40px
+		&__bg
+			border-radius: 40px
+		.slick-dots
+			padding: 0 30px 0 0
+		&__logo
+			padding: 0 0 0 30px
+
+	.logo-home
+		margin: 0 0 30px
+
+	.home h1
+		margin: 0 0 30px
 
 @media only screen and (max-width: 768px)
 
 @media only screen and (max-width: 576px)
+	.home-slider .slick-dots
+		position: relative
+		padding: 0
+		margin: 20px auto 0
+		justify-content: center
+		bottom: 0
+		li
+			border-color: #4D9B42
+			&.slick-active
+				background: #4D9B42
+
+	.form-footer
+		flex-direction: column
+		align-items: center
+		.btn
+			margin: 10px auto 0
+
+	.btn-group > .btn-group:not(:first-child), .btn-group > :not(.btn-check:first-child) + .btn
+		margin: 10px auto 0
+
+	input, textarea, select
+		padding: 0 20px
 
 @media only screen and (max-width: 480px)
 
 @media only screen and (max-width: 420px)
+	.home-content
+		padding: 20px
+		border-radius: 20px
 
-@media only screen and (max-width: 370px)	
+	.home-slider
+		border-radius: 20px
+		&__bg
+			border-radius: 20px
+		&__logo
+			bottom: 10px
+			font-size: 12px
+			padding: 0 10px
+			flex-direction: column
+			align-items: center
+			span
+				margin: 10px 0 0
+
+	.slick-dots li
+		width: 14px
+		height: 14px
+		margin: 0 10px 0 0
+		&:last-child
+			margin: 0
+
+	.container, .container-fluid
+		padding: 0 15px
+
+	.row
+		margin: 0 -15px
+		> *
+			padding: 0 15px
+@media only screen and (max-width: 370px)
