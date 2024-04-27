@@ -1,0 +1,94 @@
+@import "vars"
+
+.home
+	overflow-x: hidden
+	h1
+		margin: 0 0 38px	
+
+.home-wrapper
+	width: 100%
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	padding: 60px 0
+
+.home-slider
+	width: calc(100% - 650px + 60px)
+	margin: 0 0 0 -60px
+	&__item
+		border-radius: 0 40px 40px 0
+		position: relative
+		z-index: 1
+		height: 100%
+	&__logo
+		position: absolute
+		left: 0
+		padding: 0 0 0 120px
+		bottom: 45px
+		z-index: 1
+		display: flex
+		align-items: center
+		font-size: 17px
+		text-transform: uppercase
+		color: #fff
+		&:hover
+			color: #fff
+		span
+			max-width: 130px
+			display: block
+			margin: 0 0 0 11px
+	&__bg
+		border-radius: 0 40px 40px 0
+		width: 100%
+		height: 100%
+		object-fit: cover
+	.slick-dots
+		right: 0
+		bottom: 55px
+		position: absolute
+		z-index: 1	
+		padding: 0 100px 
+	.slick-track, .slick-list
+		height: 100%
+	.slick-track
+		display: flex
+		align-items: stretch
+	.slick-slide
+		height: auto
+
+
+
+.home-content
+	background: #fff
+	min-width: 885px
+	margin: 0 0 0 -235px
+	border-radius: 40px
+	padding: 100px 120px 45px 
+	box-shadow: 0 10px 35px 0 rgba(77,155,66,.1)
+	&__wrapper
+		max-width: 398px
+		width: 100%
+		height: 100%
+		display: flex
+		flex-direction: column
+		margin: 0 0 0 auto	
+
+.logo-home
+	margin: 0 0 120px
+	@include d-flex
+	max-width: 142px
+	width: 100%	
+
+.link-forgot-password
+	margin: 18px 0 0
+
+.form-entrance
+	height: 100%
+	width: 100%
+	display: flex
+	flex-direction: column
+	[type='submit']
+		margin: 40px 0 0
+
+.form-footer
+	margin: auto 0 0		

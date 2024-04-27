@@ -1,0 +1,143 @@
+.home {
+  overflow-x: hidden;
+}
+.home h1 {
+  margin: 0 0 38px;
+}
+
+.home-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 60px 0;
+}
+
+.home-slider {
+  width: calc(100% - 650px + 60px);
+  margin: 0 0 0 -60px;
+}
+.home-slider__item {
+  border-radius: 0 40px 40px 0;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+.home-slider__logo {
+  position: absolute;
+  left: 0;
+  padding: 0 0 0 120px;
+  bottom: 45px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.home-slider__logo:hover {
+  color: #fff;
+}
+.home-slider__logo span {
+  max-width: 130px;
+  display: block;
+  margin: 0 0 0 11px;
+}
+.home-slider__bg {
+  border-radius: 0 40px 40px 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home-slider .slick-dots {
+  right: 0;
+  bottom: 55px;
+  position: absolute;
+  z-index: 1;
+  padding: 0 100px;
+}
+.home-slider .slick-track, .home-slider .slick-list {
+  height: 100%;
+}
+.home-slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.home-slider .slick-slide {
+  height: auto;
+}
+
+.home-content {
+  background: #fff;
+  min-width: 885px;
+  margin: 0 0 0 -235px;
+  border-radius: 40px;
+  padding: 100px 120px 45px;
+  -webkit-box-shadow: 0 10px 35px 0 rgba(77, 155, 66, 0.1);
+          box-shadow: 0 10px 35px 0 rgba(77, 155, 66, 0.1);
+}
+.home-content__wrapper {
+  max-width: 398px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 0 auto;
+}
+
+.logo-home {
+  margin: 0 0 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 142px;
+  width: 100%;
+}
+
+.link-forgot-password {
+  margin: 18px 0 0;
+}
+
+.form-entrance {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form-entrance [type=submit] {
+  margin: 40px 0 0;
+}
+
+.form-footer {
+  margin: auto 0 0;
+}
