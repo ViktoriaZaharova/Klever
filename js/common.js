@@ -6,3 +6,11 @@ $('.home-slider').slick({
 	dots: true,
 	fade: true,
 });
+
+$('.btn-burger').on('click', function () {
+	$('.sidebar-wrapper').fadeToggle();
+});
+
+$('.sidebar-wrapper__close').on('click', function () {
+	$('.sidebar-wrapper').fadeOut();
+});
