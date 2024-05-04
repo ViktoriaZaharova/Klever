@@ -218,6 +218,28 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   color: #fff;
 }
 
+.btn-grey-black {
+  color: #fff;
+  background: #d3d3d3;
+}
+.btn-grey-black:hover, .btn-grey-black:focus, .btn-grey-black.active, .btn-grey-black:active {
+  background: #4D9B42;
+  color: #fff;
+}
+
+.btn-green {
+  background: #b1d3ac;
+  color: #fff;
+}
+.btn-green:hover, .btn-green:focus, .btn-green:active, .btn-green.active {
+  background: #4D9B42;
+  color: #fff;
+}
+
+.btn-sm {
+  padding: 10px 20px;
+}
+
 .btn-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -277,6 +299,10 @@ h3, .h3 {
   width: 100%;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 .breadcrumb-nav {
   width: 100%;
 }
@@ -300,10 +326,10 @@ h3, .h3 {
 }
 
 .row {
-  margin: 0 -25px;
+  margin: 0 -20px;
 }
 .row > * {
-  padding: 0 25px;
+  padding: 0 20px;
 }
 
 .color-grey {

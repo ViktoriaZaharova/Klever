@@ -66,10 +66,10 @@ body:after
 	left: 0
 	background: url('../img/circle1.svg') no-repeat center
 	background-size: 100%
-	z-index: -1	
+	z-index: -1
 
 html, body
-	overflow-x: hidden	
+	overflow-x: hidden
 
 img
 	display: block
@@ -166,6 +166,24 @@ button, .btn
 		background: $accent
 		color: #fff
 
+.btn-grey-black
+	color: #fff
+	background: #d3d3d3
+	&:hover, &:focus, &.active, &:active
+		background: $accent
+		color: #fff
+
+.btn-green
+	background: #b1d3ac
+	color: #fff
+	
+	&:hover, &:focus, &:active, &.active
+		background: $accent
+		color: #fff
+
+.btn-sm
+	padding: 10px 20px		
+
 .btn-group
 	display: flex
 	align-items: center
@@ -176,7 +194,7 @@ button, .btn
 	margin-left: 20px
 
 .btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:nth-child(n+3), .btn-group>:not(.btn-check)+.btn
-	border-radius: 10px		
+	border-radius: 10px
 
 .svg-icon
 	display: inline-block
@@ -202,7 +220,7 @@ h1, .h1, h2, .h2
 	font-size: 24px
 	font-weight: 500
 	margin: 0 0 15px
-	text-transform: uppercase	
+	text-transform: uppercase
 
 h3, .h3
 	font-size: 20px
@@ -210,27 +228,30 @@ h3, .h3
 	margin: 0
 	width: 100%
 
+.mb-20
+	margin-bottom: 20px
+
 .breadcrumb-nav
 	width: 100%
 
 .breadcrumb
-	margin: 0 
+	margin: 0
 	width: 100%
 	font-size: 14px
 
 .breadcrumb-item.active
-	color: #4D9B42			
+	color: #4D9B42
 
 .container
-	padding: 0 60px	
+	padding: 0 60px
 
 .container-fluid
-	padding: 0 60px		
+	padding: 0 60px
 
 .row
-	margin: 0 -25px
+	margin: 0 -20px
 	>*
-		padding: 0 25px	
+		padding: 0 20px
 
 .color-grey
 	color: #808080
@@ -238,10 +259,10 @@ h3, .h3
 a.color-grey
 	color: #808080
 	&:hover
-		color: #000			
+		color: #000
 
 .color-blue
-	color: #66B0F4		
+	color: #66B0F4
 
 a.color-blue
 	color: #66B0F4
@@ -271,9 +292,9 @@ a.color-blue
 		&:last-child
 			margin: 0
 		button
-			display: none	
+			display: none
 		&.slick-active
-			background: #fff		
+			background: #fff
 
 //checkbox my
 .label-checkbox
