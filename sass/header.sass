@@ -1,2 +1,152 @@
 @import "vars"
 
+.header
+	padding: 50px 0 46px
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	h1
+		margin: 0 0 13px
+
+.header-title
+	margin: 0 auto 0 0
+
+.user-navigation
+	display: flex
+	align-items: center
+	.dropdown
+		margin: 0 0 0 40px
+		&:first-child
+			margin: 0
+
+			
+
+.dropdown-toggle
+	display: flex
+	align-items: center
+	&::after			
+		min-width: 30px
+		width: 30px
+		height: 15px
+		border: none
+		@include d-flex
+		background: url('../img/arrow-bottom-dropdown.svg') no-repeat center
+		background-size: 100%
+		margin: 0 0 0 20px
+
+.user-dropdown
+	.dropdown-toggle
+		&__icon
+			width: 55px
+			height: 55px
+			border-radius: 50%
+			background: #B1D3AC
+			stroke: #fff
+			fill: none
+			padding: 13px		
+
+.settings-dropdown
+	.dropdown-toggle
+		width: 46px
+		height: 10px
+		fill: #4D9B42
+		@include d-flex
+		&::after
+			display: none			
+
+.logo
+	max-width: 142px
+	width: 100%
+	@include d-flex
+	margin: 0 0 50px
+
+.fixed-sidebar
+	padding: 62px 0
+	width: 100%	
+	// position: fixed
+	// top: 0
+	// z-index: 3
+
+.sidebar-wrapper
+	position: relative
+	z-index: 1
+	max-width: 335px
+	width: 100%
+	padding: 54px 36px 47px 0
+	&::before
+		content: ''
+		position: absolute
+		left: -60px
+		top: 0
+		height: 100%
+		width: calc(100% + 60px)
+		background: #fff
+		border-radius: 0 40px 40px 0
+		border: 1px solid #fff
+		z-index: -1
+		backdrop-filter: blur(100px)
+
+.menu
+	width: 100%
+	font-size: 18px
+	li
+		margin: 0 0 35px
+		&:last-child
+			margin: 0
+		a
+			width: 100%
+			display: flex
+			align-items: center
+			color: #292929
+
+
+.menu-link
+	&__icon
+		width: 26px
+		min-width: 26px
+		height: 24px
+		@include d-flex
+		margin: 0 12px 0 0	
+		fill: #4D9B42
+	&:hover
+		color: $accent
+		.menu-link__icon
+			fill: #B1D3AC	
+	&.disabled
+		color: #8A8A8A
+		pointer-events: none
+		.menu-link__icon
+			fill: #B1D3AC			
+
+.manager-box
+	margin: 64px 0 0
+	width: 100%
+	padding: 20px 30px 
+	font-size: 20px
+	&__photo
+		width: 55px
+		height: 55px
+		@include d-flex
+		border-radius: 50%
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__name
+		margin: 20px 0 0
+		span
+			color: #4D9B42
+			margin: 0 0 10px
+			display: block
+			font-size: 16px
+	&__phone
+		margin: 20px 0 0
+		color: #292929
+		&:hover
+			color: $accent
+
+
+
+	
+

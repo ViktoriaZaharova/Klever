@@ -45,7 +45,7 @@ body {
   line-height: normal;
   font-family: "Inter", sans-serif;
   font-weight: normal;
-  background: #fff;
+  background: #FAFAFA;
   color: #010101;
 }
 
@@ -267,6 +267,28 @@ h1, .h1, h2, .h2 {
   font-size: 24px;
   font-weight: 500;
   margin: 0 0 15px;
+  text-transform: uppercase;
+}
+
+h3, .h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  width: 100%;
+}
+
+.breadcrumb-nav {
+  width: 100%;
+}
+
+.breadcrumb {
+  margin: 0;
+  width: 100%;
+  font-size: 14px;
+}
+
+.breadcrumb-item.active {
+  color: #4D9B42;
 }
 
 .container {
