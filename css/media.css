@@ -1,6 +1,30 @@
 /*==========	Desktop First	==========*/
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1700px) {
+  .report-card {
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .report-card__body {
+    margin: 15px 0 0;
+  }
+  .report-card__name {
+    font-size: 18px;
+  }
+  .report-card__files {
+    margin: 15px 0 0;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .report-card__photo {
+    height: 200px;
+    border-radius: 10px;
+  }
+  .report-card__photo img {
+    border-radius: 10px;
+  }
+}
+@media only screen and (max-width: 1330px) {
   body:before {
     width: 616px;
     height: 648px;
@@ -20,6 +44,13 @@
   }
   .container-fluid, .container {
     padding: 0 30px;
+  }
+  .header-object {
+    margin: 0 20px 0 0;
+    font-size: 14px;
+  }
+  .mb-50 {
+    margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -44,6 +75,28 @@
   .content-wrapper {
     padding: 30px;
     margin: 0 0 40px;
+  }
+  .header-object {
+    width: 100%;
+    margin: 10px 0 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .manager-box {
+    padding: 10px;
+  }
+  .content {
+    height: auto;
+    overflow-y: auto;
+  }
+  body::before {
+    width: 416px;
+    height: 448px;
+  }
+  body::after {
+    width: 740px;
+    height: 433px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -151,6 +204,16 @@
     max-width: none;
   }
 }
+@media only screen and (max-width: 768px) {
+  body::before {
+    width: 216px;
+    height: 148px;
+  }
+  body::after {
+    width: 440px;
+    height: 133px;
+  }
+}
 @media only screen and (max-width: 576px) {
   .home-slider .slick-dots {
     position: relative;
@@ -211,6 +274,33 @@
   .event-card {
     padding: 15px;
   }
+  .container, .container-fluid {
+    padding: 0 15px;
+  }
+  .row {
+    margin: 0 -15px;
+  }
+  .row > * {
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header-title {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  .header-object {
+    margin: 10px 0;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .header-object__title {
+    padding: 0 10px;
+  }
+  .header-object__address {
+    padding: 5px 0 5px 10px;
+  }
 }
 @media only screen and (max-width: 420px) {
   .home-content {
@@ -270,5 +360,10 @@
   }
   h3, .h3 {
     font-size: 18px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .header-object {
+    display: none;
   }
 }

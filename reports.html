@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Klever</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<section class="main page main-reports">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-lg-3">
+					<div class="fixed-sidebar">
+						<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+						<div class="btn-burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="sidebar-wrapper">
+							<div class="sidebar-wrapper__close"></div>
+							<ul class="menu my-ul">
+								<li class="menu-item">
+									<a href="home.html" class="menu-link">
+										<span class="menu-link__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#menu-icon1"></use>
+											</svg>
+										</span>
+										<span class="menu-link__text">Лента<span class="menu-link__value">3</span></span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="payment.html" class="menu-link">
+										<span class="menu-link__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#menu-icon2"></use>
+											</svg>
+										</span>
+										<span class="menu-link__text">Счета на оплату</span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link disabled">
+										<span class="menu-link__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#menu-icon3"></use>
+											</svg>
+										</span>
+										<span class="menu-link__text">График строительства</span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link disabled">
+										<span class="menu-link__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#menu-icon4"></use>
+											</svg>
+										</span>
+										<span class="menu-link__text">Удалённый контроль</span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="reports.html" class="menu-link">
+										<span class="menu-link__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#menu-icon5"></use>
+											</svg>
+										</span>
+										<span class="menu-link__text">Отчеты со стройки</span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link disabled">
+										<span class="menu-link__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#menu-icon6"></use>
+											</svg>
+										</span>
+										<span class="menu-link__text">Заявки и жалобы</span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link disabled">
+										<span class="menu-link__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#menu-icon7"></use>
+											</svg>
+										</span>
+										<span class="menu-link__text">База знаний</span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="contacts.html" class="menu-link">
+										<span class="menu-link__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#menu-icon8"></use>
+											</svg>
+										</span>
+										<span class="menu-link__text">Контакты</span>
+									</a>
+								</li>
+							</ul>
+
+							<div class="manager-box">
+								<div class="manager-box__photo"><img src="img/manager.jpg" alt=""></div>
+								<div class="manager-box__name">
+									<span>Ваш менеджер</span>
+									<div class="h3">Велов Ярослав
+										Игоревич</div>
+								</div>
+								<a href="tel:+78004444422" class="manager-box__phone">8 800 444 44 22</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-9">
+
+					<div class="content">
+						<div class="header">
+							<div class="header-title">
+								<h1>Отчёты со стройки</h1>
+								<nav aria-label="breadcrumb" class="breadcrumb-nav">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item"><a href="home.html">Главная</a></li>
+										<li class="breadcrumb-item active" aria-current="page">Отчёты со стройки</li>
+									</ol>
+								</nav>
+							</div>
+
+							<div class="header-object dropdown">
+								<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+									<span class="header-object__photo"><img src="img/object1.jpg" alt=""></span>
+									<span class="header-object__title">Дом 60 м<sup>2</sup></span>
+									<span class="header-object__address">Маяковского, 47 б</span>
+									<span class="dropdown-menu">
+										<span class="dropdown-item">menu1</span>
+										<span class="dropdown-item">menu1</span>
+										<span class="dropdown-item">menu1</span>
+										<span class="dropdown-item">menu1</span>
+									</span>
+								</a>
+							</div>
+
+							<div class="user-navigation">
+								<div class="dropdown user-dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<span class="dropdown-toggle__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#user"></use>
+											</svg>
+										</span>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">menu1</a>
+										<a href="#" class="dropdown-item">menu1</a>
+										<a href="#" class="dropdown-item">menu1</a>
+										<a href="#" class="dropdown-item">menu1</a>
+									</div>
+								</div>
+
+								<div class="dropdown settings-dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#dots"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">menu2</a>
+										<a href="#" class="dropdown-item">menu2</a>
+										<a href="#" class="dropdown-item">menu2</a>
+										<a href="#" class="dropdown-item">menu2</a>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+
+						<div class="content-wrapper">
+							<div class="content-section">
+
+								<div class="row reports-wrapper">
+									<div class="col-12 col-sm-6 col-xl-4 mb-50 report-col">
+										<div class="report-card">
+											<a href="report-page.html" class="report-card__photo"><img src="img/report1.jpg" alt=""></a>
+											<div class="report-card__body">
+												<a href="report-page.html" class="report-card__name">Монтаж лестницы</a>
+												<div class="report-card__date">12.12.2023</div>
+												<div class="report-card__files">
+													<a href="#" class="report-card__download" download="#"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#file"></use>
+														</svg></a>
+													<a href="report-page.html" class="report-card__gallery">
+														<span class="report-card__gallery-value">27 фото</span>
+													</a>
+													<a href="report-page.html" class="report-card__gallery">
+														<span class="report-card__gallery-value">1 видео</span>
+													</a>
+													<a href="#" class="report-card__gallery" download="#" target="_blank">
+														<span class="report-card__gallery-value">1 документ</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-xl-4 mb-50 report-col">
+										<div class="report-card">
+											<a href="report-page.html" class="report-card__photo"><img src="img/report2.jpg" alt=""></a>
+											<div class="report-card__body">
+												<a href="report-page.html" class="report-card__name">Установка окон</a>
+												<div class="report-card__date">12.12.2023</div>
+												<div class="report-card__files">
+													<a href="#" class="report-card__download" download="#"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#file"></use>
+														</svg></a>
+													<a href="report-page.html" class="report-card__gallery">
+														<span class="report-card__gallery-value">10 фото</span>
+													</a>
+													<a href="#" class="report-card__gallery" download="#" target="_blank">
+														<span class="report-card__gallery-value">1 документ</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-xl-4 mb-50 report-col">
+										<div class="report-card">
+											<a href="report-page.html" class="report-card__photo"><img src="img/report3.jpg" alt=""></a>
+											<div class="report-card__body">
+												<a href="report-page.html" class="report-card__name">Материалы для крыши</a>
+												<div class="report-card__date">12.12.2023</div>
+												<div class="report-card__files">
+													<a href="#" class="report-card__download" download="#"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#file"></use>
+														</svg></a>
+													<a href="#" class="report-card__gallery" download="#" target="_blank">
+														<span class="report-card__gallery-value">1 документ</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-xl-4 mb-50 report-col">
+										<div class="report-card">
+											<a href="report-page.html" class="report-card__photo"><img src="img/report4.jpg" alt=""></a>
+											<div class="report-card__body">
+												<a href="report-page.html" class="report-card__name">Заливка пола</a>
+												<div class="report-card__date">12.12.2023</div>
+												<div class="report-card__files">
+													<a href="#" class="report-card__download" download="#"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#file"></use>
+														</svg></a>
+													<a href="report-page.html" class="report-card__gallery">
+														<span class="report-card__gallery-value">27 фото</span>
+													</a>
+													<a href="report-page.html" class="report-card__gallery">
+														<span class="report-card__gallery-value">1 видео</span>
+													</a>
+													<a href="#" class="report-card__gallery" download="#" target="_blank">
+														<span class="report-card__gallery-value">1 документ</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-xl-4 mb-50 report-col">
+										<div class="report-card">
+											<a href="report-page.html" class="report-card__photo"><img src="img/report5.jpg" alt=""></a>
+											<div class="report-card__body">
+												<a href="report-page.html" class="report-card__name">Проводка в холле</a>
+												<div class="report-card__date">12.12.2023</div>
+												<div class="report-card__files">
+													<a href="#" class="report-card__download" download="#"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#file"></use>
+														</svg></a>
+													<a href="report-page.html" class="report-card__gallery">
+														<span class="report-card__gallery-value">10 фото</span>
+													</a>
+													<a href="#" class="report-card__gallery" download="#" target="_blank">
+														<span class="report-card__gallery-value">1 документ</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-xl-4 mb-50 report-col">
+										<div class="report-card">
+											<a href="report-page.html" class="report-card__photo"><img src="img/report6.jpg" alt=""></a>
+											<div class="report-card__body">
+												<a href="report-page.html" class="report-card__name">Отчет об установке навеса</a>
+												<div class="report-card__date">12.12.2023</div>
+												<div class="report-card__files">
+													<a href="#" class="report-card__download" download="#"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#file"></use>
+														</svg></a>
+													<a href="#" class="report-card__gallery" download="#" target="_blank">
+														<span class="report-card__gallery-value">1 документ</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-xl-4 mb-50 report-col">
+										<div class="report-card">
+											<a href="report-page.html" class="report-card__photo"><img src="img/report1.jpg" alt=""></a>
+											<div class="report-card__body">
+												<a href="report-page.html" class="report-card__name">Монтаж лестницы</a>
+												<div class="report-card__date">12.12.2023</div>
+												<div class="report-card__files">
+													<a href="#" class="report-card__download" download="#"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#file"></use>
+														</svg></a>
+													<a href="report-page.html" class="report-card__gallery">
+														<span class="report-card__gallery-value">27 фото</span>
+													</a>
+													<a href="report-page.html" class="report-card__gallery">
+														<span class="report-card__gallery-value">1 видео</span>
+													</a>
+													<a href="#" class="report-card__gallery" download="#" target="_blank">
+														<span class="report-card__gallery-value">1 документ</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-xl-4 mb-50 report-col">
+										<div class="report-card">
+											<a href="report-page.html" class="report-card__photo"><img src="img/report2.jpg" alt=""></a>
+											<div class="report-card__body">
+												<a href="report-page.html" class="report-card__name">Установка окон</a>
+												<div class="report-card__date">12.12.2023</div>
+												<div class="report-card__files">
+													<a href="#" class="report-card__download" download="#"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#file"></use>
+														</svg></a>
+													<a href="report-page.html" class="report-card__gallery">
+														<span class="report-card__gallery-value">10 фото</span>
+													</a>
+													<a href="#" class="report-card__gallery" download="#" target="_blank">
+														<span class="report-card__gallery-value">1 документ</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-xl-4 mb-50 report-col">
+										<div class="report-card">
+											<a href="report-page.html" class="report-card__photo"><img src="img/report3.jpg" alt=""></a>
+											<div class="report-card__body">
+												<a href="report-page.html" class="report-card__name">Материалы для крыши</a>
+												<div class="report-card__date">12.12.2023</div>
+												<div class="report-card__files">
+													<a href="#" class="report-card__download" download="#"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#file"></use>
+														</svg></a>
+													<a href="#" class="report-card__gallery" download="#" target="_blank">
+														<span class="report-card__gallery-value">1 документ</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-xl-4 mb-50 report-col">
+										<div class="report-card">
+											<a href="report-page.html" class="report-card__photo"><img src="img/report4.jpg" alt=""></a>
+											<div class="report-card__body">
+												<a href="report-page.html" class="report-card__name">Заливка пола</a>
+												<div class="report-card__date">12.12.2023</div>
+												<div class="report-card__files">
+													<a href="#" class="report-card__download" download="#"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#file"></use>
+														</svg></a>
+													<a href="report-page.html" class="report-card__gallery">
+														<span class="report-card__gallery-value">27 фото</span>
+													</a>
+													<a href="report-page.html" class="report-card__gallery">
+														<span class="report-card__gallery-value">1 видео</span>
+													</a>
+													<a href="#" class="report-card__gallery" download="#" target="_blank">
+														<span class="report-card__gallery-value">1 документ</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-xl-4 mb-50 report-col">
+										<div class="report-card">
+											<a href="report-page.html" class="report-card__photo"><img src="img/report5.jpg" alt=""></a>
+											<div class="report-card__body">
+												<a href="report-page.html" class="report-card__name">Проводка в холле</a>
+												<div class="report-card__date">12.12.2023</div>
+												<div class="report-card__files">
+													<a href="#" class="report-card__download" download="#"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#file"></use>
+														</svg></a>
+													<a href="report-page.html" class="report-card__gallery">
+														<span class="report-card__gallery-value">10 фото</span>
+													</a>
+													<a href="#" class="report-card__gallery" download="#" target="_blank">
+														<span class="report-card__gallery-value">1 документ</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-xl-4 mb-50 report-col">
+										<div class="report-card">
+											<a href="report-page.html" class="report-card__photo"><img src="img/report6.jpg" alt=""></a>
+											<div class="report-card__body">
+												<a href="report-page.html" class="report-card__name">Отчет об установке навеса</a>
+												<div class="report-card__date">12.12.2023</div>
+												<div class="report-card__files">
+													<a href="#" class="report-card__download" download="#"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#file"></use>
+														</svg></a>
+													<a href="#" class="report-card__gallery" download="#" target="_blank">
+														<span class="report-card__gallery-value">1 документ</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 mb-20">
+										<a href="#" class="btn btn-grey btn-toggle-reports"><span>показать еще</span>
+											<svg class="svg-icon btn-arrow">
+												<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

@@ -1,7 +1,26 @@
 /*==========	Desktop First	==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1300px)
+@media only screen and (max-width: 1700px)
+	.report-card
+		padding: 20px
+		border-radius: 20px
+		&__body
+			margin: 15px 0 0
+		&__name
+			font-size: 18px
+		&__files
+			margin: 15px 0 0
+
+@media only screen and (max-width: 1500px)
+	.report-card
+		&__photo
+			height: 200px
+			border-radius: 10px
+			img
+				border-radius: 10px
+
+@media only screen and (max-width: 1330px)
 	body
 		&:before
 			width: 616px
@@ -21,6 +40,13 @@
 
 	.container-fluid, .container
 		padding: 0 30px
+
+	.header-object
+		margin: 0 20px 0 0
+		font-size: 14px
+
+	.mb-50
+		margin-bottom: 30px
 
 @media only screen and (max-width: 1200px)
 	.home-wrapper
@@ -42,6 +68,27 @@
 	.content-wrapper
 		padding: 30px
 		margin: 0 0 40px
+
+	.header-object
+		width: 100%
+		margin: 10px 0 0
+		order: 1
+
+	.manager-box
+		padding: 10px
+
+
+	.content
+		height: auto
+		overflow-y: auto		
+
+	body
+		&::before
+			width: 416px
+			height: 448px
+		&::after
+			width: 740px
+			height: 433px
 
 @media only screen and (max-width: 992px)
 	.home-wrapper
@@ -126,6 +173,13 @@
 		max-width: none
 
 @media only screen and (max-width: 768px)
+	body
+		&::before
+			width: 216px
+			height: 148px
+		&::after
+			width: 440px
+			height: 133px
 
 @media only screen and (max-width: 576px)
 	.home-slider .slick-dots
@@ -168,16 +222,35 @@
 
 	.settings-dropdown .dropdown-toggle
 		width: 24px
-		height: 5px	
+		height: 5px
 
 	.content-wrapper
 		padding: 20px
-		border-radius: 20px	
+		border-radius: 20px
 
 	.event-card
-		padding: 15px	
+		padding: 15px
+
+	.container, .container-fluid
+		padding: 0 15px
+
+	.row
+		margin: 0 -15px
+		> *
+			padding: 0 15px
 
 @media only screen and (max-width: 480px)
+	.header-title
+		width: 100%
+		margin: 0 0 10px
+
+	.header-object
+		margin: 10px 0
+		order: 0
+		&__title
+			padding: 0 10px
+		&__address
+			padding: 5px 0 5px 10px
 
 @media only screen and (max-width: 420px)
 	.home-content
@@ -224,3 +297,5 @@
 	h3, .h3
 		font-size: 18px
 @media only screen and (max-width: 370px)
+	.header-object
+		display: none

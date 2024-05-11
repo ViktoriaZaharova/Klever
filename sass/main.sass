@@ -7,7 +7,8 @@
 
 .content
 	height: 100vh
-	overflow-y: auto 	
+	overflow-y: auto
+	overflow-x: hidden
 
 .home-wrapper
 	width: 100%
@@ -171,7 +172,7 @@
 			background: #FAFAFA
 		.event-card
 			&__date
-				color: $accent	
+				color: $accent
 	&:last-child
 		margin: 0
 	&__body
@@ -195,7 +196,6 @@
 		color: #fff
 		border-radius: 10px
 		background: #a6d120
-		
 
 .responsible-box
 	background: #fff
@@ -224,3 +224,115 @@
 		color: #292929
 	&__position
 		font-size: 20px
+
+// main-reports
+.page
+	.content-wrapper
+		border-radius: 0
+		background: transparent
+		box-shadow: none
+		padding: 0
+		border: none
+
+.header-object
+	border-radius: 20px
+	background: #fff
+	display: flex
+	align-items: center
+	padding: 10px
+	margin: 0 40px 0 0
+	.dropdown-toggle
+		width: 100%
+		display: flex
+		align-items: center
+		color: #292929
+		&::after
+			width: 18px
+			height: 10px
+			min-width: 18px
+		&:hover
+			color: $accent
+	sup
+		font-size: 12px
+		display: inline-block
+	&__photo
+		@include d-flex
+		width: 40px
+		height: 40px
+		min-width: 40px
+		overflow: hidden
+		border-radius: 10px
+		img
+			border-radius: 10px
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__title
+		padding: 0 20px
+
+	&__address
+		padding: 5px 0 5px 20px
+		border-left: 1px solid $accent
+
+
+.report-card
+	width: 100%
+	height: 100%
+	background: #fff
+	box-shadow: 0 10px 50px 0 rgba(77,155,66,.1)
+	border-radius: 40px
+	padding: 50px
+	&__photo
+		width: 100%
+		height: 292px
+		@include d-flex
+		border-radius: 20px
+		img
+			border-radius: 20px
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__body
+		width: 100%
+		margin: 25px 0 0
+	&__name
+		font-size: 24px
+		font-weight: 500
+		color: #292929
+		&:hover
+			color: $accent
+	&__date
+		margin: 10px 0 0
+		color: #4d9b42
+	&__files
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+		width: 100%	
+		margin: 25px 0 0
+	&__download
+		width: 23px
+		height: 25px
+		@include d-flex
+		fill: #b1d3ac
+	&__gallery
+		margin: 0 0 5px 15px
+		background-color: #b1d3ac
+		border-radius: 10px
+		color: #fff
+		padding: 5px 10px
+		cursor: pointer
+		&-photo
+			display: none
+
+.report-col
+	display: none
+	&:nth-child(-n+6)
+		display: flex
+
+.btn-toggle-reports
+	margin: 0 auto 
+	.btn-arrow
+		margin: 0 0 0 20px
+		fill: none 
+		stroke: #808080	
