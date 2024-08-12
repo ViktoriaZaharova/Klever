@@ -178,13 +178,13 @@ button, .btn
 .btn-green
 	background: #b1d3ac
 	color: #fff
-	
+
 	&:hover, &:focus, &:active, &.active
 		background: $accent
 		color: #fff
 
 .btn-sm
-	padding: 10px 20px		
+	padding: 10px 20px
 
 .btn-group
 	display: flex
@@ -198,8 +198,6 @@ button, .btn
 .btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:nth-child(n+3), .btn-group>:not(.btn-check)+.btn
 	border-radius: 10px
 
-	
-
 .svg-icon
 	display: inline-block
 	width: 100%
@@ -210,7 +208,6 @@ button, .btn
 	width: 30px
 	height: 15px
 	min-width: 30px
-
 
 strong, b
 	font-weight: bold
@@ -242,8 +239,11 @@ h3, .h3
 .mb-20
 	margin-bottom: 20px
 
+.mb-40
+	margin-bottom: 40px
+
 .mb-50
-	margin-bottom: 50px	
+	margin-bottom: 50px
 
 .breadcrumb-nav
 	width: 100%
@@ -256,7 +256,10 @@ h3, .h3
 		color: #4D9B42
 		&:hover
 			color: $light-green
-	
+
+.breadcrumb-item
+	display: flex
+	align-items: flex-start
 
 .breadcrumb-item.active
 	color: #4D9B42
@@ -322,6 +325,63 @@ a.color-blue
 			display: none
 		&.slick-active
 			background: #fff
+
+.slider-nav
+	display: flex
+	align-items: flex-start
+	.slick-prev
+		margin: 0 20px 0 0
+
+.slick-arrow
+	opacity: 1
+	z-index: 1
+	position: relative
+	top: 0
+	left: 0
+	right: 0
+	width: 57px
+	height: 57px
+	min-width: 57px
+	padding: 13px 20px
+	background: transparent
+	border-radius: 50%
+	border: 2px solid #7E7E7E
+	stroke: #606060
+	fill: none
+	transition: .3s ease
+	@include d-flex
+	svg
+
+	&:hover, &:focus
+		background: $accent
+		border-color: $accent
+		stroke: #fff
+		color: #fff
+
+.nav-tabs
+	width: 100%
+	border: none
+	border-radius: 0
+	align-items: flex-start	
+	text-transform: uppercase	
+	margin: 0 0 20px
+	.nav-item
+		margin: 0 20px 20px 0
+		&:last-child
+			margin: 0 0 20px
+	.nav-link
+		border: none
+		border-bottom: 1px solid transparent
+		border-radius: 0
+		padding: 10px 0
+		text-transform: uppercase
+		font-size: 20px
+		font-weight: 500
+		color: #8A8A8A
+		&.active
+			color: #292929
+			border-color: $accent
+
 
 //checkbox my
 .label-checkbox

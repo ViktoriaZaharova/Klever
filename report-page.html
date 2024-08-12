@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Klever</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<section class="main main-report">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-lg-3">
+					<div class="fixed-sidebar">
+						<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+						<div class="btn-burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="sidebar-wrapper">
+							<div class="sidebar-wrapper__close"></div>
+							<ul class="menu my-ul">
+								<li class="menu-item">
+									<a href="home.html" class="menu-link">
+										<span class="menu-link__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#menu-icon1"></use>
+											</svg>
+										</span>
+										<span class="menu-link__text">Лента<span class="menu-link__value">3</span></span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="payment.html" class="menu-link">
+										<span class="menu-link__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#menu-icon2"></use>
+											</svg>
+										</span>
+										<span class="menu-link__text">Счета на оплату</span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link disabled">
+										<span class="menu-link__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#menu-icon3"></use>
+											</svg>
+										</span>
+										<span class="menu-link__text">График строительства</span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link disabled">
+										<span class="menu-link__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#menu-icon4"></use>
+											</svg>
+										</span>
+										<span class="menu-link__text">Удалённый контроль</span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="reports.html" class="menu-link">
+										<span class="menu-link__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#menu-icon5"></use>
+											</svg>
+										</span>
+										<span class="menu-link__text">Отчеты со стройки</span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link disabled">
+										<span class="menu-link__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#menu-icon6"></use>
+											</svg>
+										</span>
+										<span class="menu-link__text">Заявки и жалобы</span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link disabled">
+										<span class="menu-link__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#menu-icon7"></use>
+											</svg>
+										</span>
+										<span class="menu-link__text">База знаний</span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="contacts.html" class="menu-link">
+										<span class="menu-link__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#menu-icon8"></use>
+											</svg>
+										</span>
+										<span class="menu-link__text">Контакты</span>
+									</a>
+								</li>
+							</ul>
+
+							<div class="manager-box">
+								<div class="manager-box__photo"><img src="img/manager.jpg" alt=""></div>
+								<div class="manager-box__name">
+									<span>Ваш менеджер</span>
+									<div class="h3">Велов Ярослав
+										Игоревич</div>
+								</div>
+								<a href="tel:+78004444422" class="manager-box__phone">8 800 444 44 22</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-9">
+
+					<div class="content">
+						<div class="header">
+							<div class="header-title">
+								<h1>Отчёты со стройки</h1>
+								<nav aria-label="breadcrumb" class="breadcrumb-nav">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item"><a href="home.html">Главная</a></li>
+										<li class="breadcrumb-item"><a href="reports.html">Отчёты со стройки</a></li>
+										<li class="breadcrumb-item active" aria-current="page">Монтаж лестницы</li>
+									</ol>
+								</nav>
+							</div>
+
+							<div class="header-object dropdown">
+								<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+									<span class="header-object__photo"><img src="img/object1.jpg" alt=""></span>
+									<span class="header-object__title">Дом 60 м<sup>2</sup></span>
+									<span class="header-object__address">Маяковского, 47 б</span>
+									<span class="dropdown-menu">
+										<span class="dropdown-item">menu1</span>
+										<span class="dropdown-item">menu1</span>
+										<span class="dropdown-item">menu1</span>
+										<span class="dropdown-item">menu1</span>
+									</span>
+								</a>
+							</div>
+
+							<div class="user-navigation">
+								<div class="dropdown user-dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<span class="dropdown-toggle__icon">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#user"></use>
+											</svg>
+										</span>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">menu1</a>
+										<a href="#" class="dropdown-item">menu1</a>
+										<a href="#" class="dropdown-item">menu1</a>
+										<a href="#" class="dropdown-item">menu1</a>
+									</div>
+								</div>
+
+								<div class="dropdown settings-dropdown">
+									<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#dots"></use>
+										</svg>
+									</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">menu2</a>
+										<a href="#" class="dropdown-item">menu2</a>
+										<a href="#" class="dropdown-item">menu2</a>
+										<a href="#" class="dropdown-item">menu2</a>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+
+						<div class="content-wrapper">
+							<div class="content-section">
+								<div class="row">
+									<div class="col-12">
+										<h2>Монтаж лестницы</h2>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12">
+
+										<div class="files-attached mb-40">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#file"></use>
+											</svg>
+											<span>прикрепленные файлы:</span>
+										</div>
+
+										<div class="row">
+											<div class="col-12">
+												<ul class="nav nav-tabs" role="tablist">
+													<li class="nav-item" role="presentation">
+														<button class="nav-link active" id="1-tab" data-bs-toggle="tab"
+															data-bs-target="#1-tab-pane" type="button" role="tab"
+															aria-controls="1-tab-pane" aria-selected="true">Фото</button>
+													</li>
+													<li class="nav-item" role="presentation">
+														<button class="nav-link" id="2-tab" data-bs-toggle="tab"
+															data-bs-target="#2-tab-pane" type="button" role="tab"
+															aria-controls="2-tab-pane" aria-selected="false">Видео</button>
+													</li>
+													<li class="nav-item" role="presentation">
+														<button class="nav-link" id="3-tab" data-bs-toggle="tab"
+															data-bs-target="#3-tab-pane" type="button" role="tab"
+															aria-controls="3-tab-pane" aria-selected="false">Документы</button>
+													</li>
+												</ul>
+												<div class="tab-content">
+													<div class="tab-pane fade show active" id="1-tab-pane" role="tabpanel"
+														aria-labelledby="1-tab" tabindex="0">
+														<div class="row">
+															<div class="col-12">
+																<div class="gallery-slider-portfolio">
+																	<div class="slide">
+																		<a href="img/report1.jpg" data-fancybox="gallery-portfolio"
+																			class="gallery-slider-portfolio__card"><img
+																				src="img/report1.jpg" alt=""></a>
+																	</div>
+																	<div class="slide">
+																		<a href="img/report7.jpg" data-fancybox="gallery-portfolio"
+																			class="gallery-slider-portfolio__card"><img
+																				src="img/report7.jpg" alt=""></a>
+																	</div>
+																	<div class="slide">
+																		<a href="img/report8.jpg" data-fancybox="gallery-portfolio"
+																			class="gallery-slider-portfolio__card"><img
+																				src="img/report8.jpg" alt=""></a>
+																	</div>
+																	<div class="slide">
+																		<a href="img/report1.jpg" data-fancybox="gallery-portfolio"
+																			class="gallery-slider-portfolio__card"><img
+																				src="img/report1.jpg" alt=""></a>
+																	</div>
+																</div>
+																<div class="slider-nav gallery-slider-portfolio__nav"></div>
+															</div>
+														</div>
+													</div>
+													<div class="tab-pane fade" id="2-tab-pane" role="tabpanel"
+														aria-labelledby="2-tab" tabindex="0">
+														<div class="row">
+															<div class="col-12">
+																<div class="gallery-slider-video">
+																	<div class="slide">
+																		<a href="img/video-preview1.jpg" data-fancybox="gallery-video"
+																			class="gallery-slider-portfolio__card gallery-slider-video__card"><img
+																				src="img/video-preview1.jpg" alt=""></a>
+																	</div>
+																	<div class="slide">
+																		<a href="img/video-preview2.jpg" data-fancybox="gallery-video"
+																			class="gallery-slider-portfolio__card gallery-slider-video__card"><img
+																				src="img/video-preview2.jpg" alt=""></a>
+																	</div>
+																</div>
+																<div class="slider-nav gallery-slider-video__nav"></div>
+															</div>
+														</div>
+													</div>
+													<div class="tab-pane fade" id="3-tab-pane" role="tabpanel"
+														aria-labelledby="3-tab" tabindex="0">
+														<div class="row">
+															<div class="col-12">
+																<div class="gallery-slider-documnets">
+																	<div class="slide">
+																		<div class="gallery-slider-document__card">
+																			1
+																		</div>
+																	</div>
+																	<div class="slide">
+																		<div class="document-card">
+																			<div class="document-card__date">
+																				05.01.2024
+																			</div>
+																			<a href="#" class="document-card__name">Документ «Договор
+																				подряда»</a>
+																			<a href="#" class="btn btn-green btn-view">
+																				<span>посмотреть</span>
+																				<svg class="svg-icon">
+																					<use xlink:href="img/sprite.svg#view-icon"></use>
+																				</svg>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="slide">
+																		<div class="gallery-slider-document__card">
+																			1
+																		</div>
+																	</div>
+																</div>
+																<div class="slider-nav gallery-slider-documents__nav"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+											<div class="col-12">
+												<div class="box-text gallery-portfolio__description">
+													<p>Чаще всего в домах и двухуровневых квартирах делают маршевые лестницы: по ним
+														удобно подниматься и спускаться. Такие лестницы состоят из маршей — отсюда и
+														название. На одном марше может быть от 3 до 15 ступеней. Более короткую
+														лестницу делать бессмысленно, а подъем по слишком длинной может быть
+														утомительным.
+														Обычно в частном доме делают межэтажную лестницу с одним или двумя маршами,
+														разделенными площадкой. Такие конструкции занимают много места, это нужно
+														учитывать при планировании дома. Перед тем как делать лестницу на второй этаж,
+														предусмотрите для нее достаточно свободного пространства на нижнем этаже и
+														подготовьте в междуэтажном перекрытии проем, соответствующий ширине марша.</p>
+													<p>Ступени на марше можно закрепить несколькими способами. Самый распространенный
+														вариант — косоурная лестница. Ступени здесь опираются на наклонные
+														балки-косоуры, имеющие пилообразные вырезы. В устройстве лестниц на косоурах и
+														тетивах есть принципиальное различие, но обычно его замечают только
+														профессиональные строители, остальным лестницы кажутся одинаковыми. Различие
+														становится более понятным, если взглянуть на схему: там наглядно обозначены
+														способы крепления ступеней в тетивах и на косоурах. Косоуры расположены под
+														ступенями, то есть опора лестницы находится снизу. При креплении в тетивы
+														нагрузка распределяется на эти тетивы, то есть опора такой лестницы находится
+														по бокам, а не снизу.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

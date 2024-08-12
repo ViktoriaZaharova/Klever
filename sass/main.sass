@@ -6,9 +6,10 @@
 		margin: 0 0 38px
 
 .content
-	height: 100vh
-	overflow-y: auto
-	overflow-x: hidden
+	height: 100%
+	// height: 100vh
+	// overflow-y: auto
+	// overflow-x: hidden
 
 .home-wrapper
 	width: 100%
@@ -274,7 +275,6 @@
 		padding: 5px 0 5px 20px
 		border-left: 1px solid $accent
 
-
 .report-card
 	width: 100%
 	height: 100%
@@ -308,7 +308,7 @@
 		display: flex
 		align-items: flex-start
 		flex-wrap: wrap
-		width: 100%	
+		width: 100%
 		margin: 25px 0 0
 	&__download
 		width: 23px
@@ -331,8 +331,74 @@
 		display: flex
 
 .btn-toggle-reports
-	margin: 0 auto 
+	margin: 0 auto
 	.btn-arrow
 		margin: 0 0 0 20px
-		fill: none 
-		stroke: #808080	
+		fill: none
+		stroke: #808080
+
+// page report
+.files-attached
+	display: flex
+	align-items: center
+	color: $accent
+	svg
+		fill: $accent
+		width: 22px
+		min-width: 22px
+		height: 25px
+		margin: 0 10px 0 0
+
+.gallery-portfolio
+	&__description
+		margin: 38px 0 0
+
+.gallery-slider-portfolio, .gallery-slider-video
+	width: calc( 100% + 50px )
+	.slide
+		margin: 0 40px 0 0
+	&__card
+		width: 529px
+		min-width: 529px
+		height: 348px
+		@include d-flex
+		position: relative
+		z-index: 1
+		border-radius: 20px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 20px
+		&::before
+			content: ''
+			position: absolute
+			bottom: 28px
+			right: 26px
+			width: 28px
+			height: 28px
+			background: url('../img/size-icon.svg') no-repeat center
+			background-size: 100%	
+			z-index: 1
+	&__nav
+		margin: 38px 0 0
+
+.gallery-slider-video__card
+	&::before
+		width: 69px
+		height: 69px
+		left: 50%
+		top: 50%
+		bottom: auto
+		right: auto		
+		border-radius: 50%
+		transform: translate(-50%,-50%)
+		background: #B1D3AC url('../img/play-icon.svg') no-repeat center
+		background-size: 17px
+
+.btn-view
+	svg
+		fill: #fff
+		width: 22px
+		height: 16px
+		margin: 0 0 0 10px
