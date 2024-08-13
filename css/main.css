@@ -542,3 +542,52 @@
 .document-card__name:hover {
   color: #4D9B42;
 }
+
+.cabinet-box {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 0 44px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+.cabinet-box__item {
+  display: flex;
+  align-items: center;
+  margin: 0 40px 0 0;
+}
+.cabinet-box__item:last-child {
+  margin: 0;
+}
+.cabinet-box h3 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.link-edit {
+  display: flex;
+  align-items: center;
+  fill: #4D9B42;
+  margin: 0 0 0 10px;
+  width: 19px;
+  height: 19px;
+  min-width: 19px;
+}
+
+.form-cabinet {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 20px;
+}
+.form-cabinet label {
+  width: 278px;
+  min-width: 278px;
+  margin: 0 20px 0 0;
+}
+.form-cabinet [type=submit] {
+  white-space: nowrap;
+}
