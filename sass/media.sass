@@ -21,7 +21,17 @@
 				border-radius: 10px
 
 	.header
-		padding: 30px 0			
+		padding: 30px 0
+
+	.gallery-slider-portfolio__card, .gallery-slider-video__card
+		width: 350px
+		min-width: 350px
+		height: 270px
+
+	.document-card
+		width: 320px
+		min-width: 320px
+		padding: 20px
 
 @media only screen and (max-width: 1330px)
 	body
@@ -80,10 +90,9 @@
 	.manager-box
 		padding: 10px
 
-
 	.content
 		height: auto
-		overflow-y: auto		
+		overflow-y: auto
 
 	body
 		&::before
@@ -92,6 +101,13 @@
 		&::after
 			width: 740px
 			height: 433px
+
+	.nav-tabs
+		margin: 0
+
+	.gallery-slider-video__card::before
+		width: 50px
+		height: 50px
 
 @media only screen and (max-width: 992px)
 	.home-wrapper
@@ -241,6 +257,34 @@
 		margin: 0 -15px
 		> *
 			padding: 0 15px
+
+	.gallery-slider-portfolio, .gallery-slider-video
+		width: 100%
+		.slick-track
+			display: flex
+			align-items: stretch
+		.slide
+			margin: 0
+			height: auto
+
+
+	.gallery-slider-portfolio__card, .gallery-slider-video__card
+		width: 100%
+		min-width: auto
+		height: 100%
+
+	.gallery-slider-documents
+		width: 100%
+		.slide
+			margin: 0
+
+	.document-card
+		width: 100%
+		min-width: auto
+
+	.gallery-portfolio__description
+		margin: 30px 0 0
+			
 
 @media only screen and (max-width: 480px)
 	.header-title

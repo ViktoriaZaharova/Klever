@@ -402,3 +402,42 @@
 		width: 22px
 		height: 16px
 		margin: 0 0 0 10px
+
+.gallery-slider-documents
+	width: calc( 100% + 50px )
+	.slide
+		margin: 0 30px 0 0
+
+.document-card
+	width: 386px
+	min-width: 386px
+	height: 100%
+	background: #fff
+	border-radius: 20px
+	padding: 40px
+	box-shadow: 0 10px 25px rgba($accent, .10)
+	margin: 0 0 20px 0
+	&__date
+		display: flex
+		align-items: center
+		color: $accent
+		margin: 0 0 30px
+		font-size: 16px
+		font-weight: 500
+		&:before
+			content: ''
+			@include d-flex
+			margin: 0 6.5px 0 0
+			width: 25px
+			height: 32px
+			min-width: 25px
+			background: url('../img/file.svg') no-repeat center
+			background-size: 100%
+	&__name
+		margin: 0 0 20px
+		width: 100%
+		font-size: 20px
+		color: #000
+		&:hover
+			color: $accent		
+		

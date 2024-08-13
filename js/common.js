@@ -15,7 +15,16 @@ $('.gallery-slider-portfolio').slick({
 	arrows: true,
 	appendArrows: '.gallery-slider-portfolio__nav',
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev-arrow"></use></svg></button>',
-	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next-arrow"></use></svg></button>'
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next-arrow"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 576,
+			settings: {
+				variableWidth: false,
+				slidesToShow: 1,
+			}
+		 }
+	 ]
 });
 
 $('.gallery-slider-video').slick({
@@ -25,7 +34,22 @@ $('.gallery-slider-video').slick({
 	arrows: true,
 	appendArrows: '.gallery-slider-video__nav',
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev-arrow"></use></svg></button>',
-	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next-arrow"></use></svg></button>'
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next-arrow"></use></svg></button>',
+	responsive: [
+		{
+		  breakpoint: 1870,
+		  settings: {
+			slidesToShow: 1,
+		  }
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				variableWidth: false,
+				slidesToShow: 1,
+			}
+		 }
+	 ]
 });
 
 $('.gallery-slider-documents').slick({
@@ -35,7 +59,29 @@ $('.gallery-slider-documents').slick({
 	arrows: true,
 	appendArrows: '.gallery-slider-documents__nav',
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev-arrow"></use></svg></button>',
-	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next-arrow"></use></svg></button>'
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next-arrow"></use></svg></button>',
+	responsive: [
+		{
+		  breakpoint: 1870,
+		  settings: {
+			slidesToShow: 1,
+		  }
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				variableWidth: false,
+				slidesToShow: 1,
+			}
+		 }
+	 ]
+});
+
+
+$('[data-bs-toggle="tab"]').on('shown.bs.tab', function(e) {
+	// e.target
+	// e.relatedTarget
+	$('.slick-slider').slick('setPosition');
 });
 
 $('.btn-burger').on('click', function () {
