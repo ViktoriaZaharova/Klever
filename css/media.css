@@ -14,6 +14,9 @@
   .report-card__files {
     margin: 15px 0 0;
   }
+  .cabinet-box__item {
+    margin: 0 20px 0 0;
+  }
 }
 @media only screen and (max-width: 1500px) {
   .report-card__photo {
@@ -35,6 +38,17 @@
     width: 320px;
     min-width: 320px;
     padding: 20px;
+  }
+  .cabinet-box {
+    padding: 20px;
+    margin: 0 0 20px;
+  }
+  .cabinet-box:last-child {
+    margin: 0;
+  }
+  .form-cabinet {
+    width: 100%;
+    margin: 10px 0 0;
   }
 }
 @media only screen and (max-width: 1330px) {
@@ -99,7 +113,6 @@
   }
   .content {
     height: auto;
-    overflow-y: auto;
   }
   body::before {
     width: 416px;
@@ -115,6 +128,28 @@
   .gallery-slider-video__card::before {
     width: 50px;
     height: 50px;
+  }
+  .form-cabinet {
+    flex-wrap: wrap;
+  }
+  .form-cabinet label {
+    min-width: auto;
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  .form-cabinet label:last-child {
+    margin: 0;
+  }
+  .form-cabinet .label-radio {
+    margin: 0 0 10px;
+    width: 100%;
+  }
+  .cabinet-box__item {
+    margin: 0 0 10px;
+    width: 100%;
+  }
+  .cabinet-box__item:last-child {
+    margin: 0;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -307,15 +342,36 @@
   .gallery-portfolio__description {
     margin: 30px 0 0;
   }
+  .cabinet-box {
+    padding: 15px;
+  }
+  .cabinet-box h3 {
+    font-size: 20px;
+  }
+  .label-radio {
+    font-size: 16px;
+  }
+  .label-radio__custom {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    margin: 0 10px 0 0;
+  }
+  .label-radio__custom::before {
+    width: 20px;
+    height: 20px;
+  }
 }
 @media only screen and (max-width: 480px) {
+  .header {
+    padding: 20px 0;
+  }
   .header-title {
-    width: 100%;
-    margin: 0 0 10px;
+    width: calc(100% - 104px);
+    margin: 0 auto 0 0;
   }
   .header-object {
     margin: 10px 0;
-    order: 0;
   }
   .header-object__title {
     padding: 0 10px;

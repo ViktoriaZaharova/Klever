@@ -581,7 +581,6 @@
 .form-cabinet {
   display: flex;
   align-items: center;
-  margin: 0 0 0 20px;
 }
 .form-cabinet label {
   width: 278px;
@@ -589,5 +588,11 @@
   margin: 0 20px 0 0;
 }
 .form-cabinet [type=submit] {
+  white-space: nowrap;
+}
+.form-cabinet .label-radio {
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: auto;
   white-space: nowrap;
 }

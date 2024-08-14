@@ -382,31 +382,72 @@ a.color-blue
 			color: #292929
 			border-color: $accent
 
+// radio my
+.label-radio
+	display: flex
+	align-items: center
+	cursor: pointer
+	margin: 0 20px 0 0
+	width: fit-content
+	font-size: 20px
+	font-weight: 500
+	&:last-child
+		margin: 0
+	input
+		display: none	
+		&:checked
+			~.label-radio
+				&__custom
+					&::before
+						opacity: 1
+	&__custom
+		margin: 0 17px 0 0
+		width: 40px
+		height: 40px
+		min-width: 40px
+		border: 1px solid $accent
+		border-radius: 10px
+		position: relative
+		z-index: 1
+		&::before
+			content: ''
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%,-50%)	
+			width: 28px
+			height: 28px
+			border-radius: 5px
+			background: $accent
+			opacity: 0
+			transition: .3s ease
+
+
 
 //checkbox my
-.label-checkbox
-	position: relative
-	display: flex
-	align-items: flex-start
-	color: rgba(255, 255, 255, 0.5)
-	font-size: 14px
-	margin: 15px 0 0
-	line-height: 1.14
+// .label-checkbox
+// 	position: relative
+// 	display: flex
+// 	align-items: flex-start
+// 	color: rgba(255, 255, 255, 0.5)
+// 	font-size: 14px
+// 	margin: 15px 0 0
+// 	line-height: 1.14
 
-.inp-check
-	display: none
+// .inp-check
+// 	display: none
 
-.checkbox-custom
-	margin: 0 12px 0 0
-	position: relative
-	border-radius: 6px
-	background-color: #fff
-	width: 16px
-	height: 16px
-	min-width: 16px
-	cursor: pointer
+// .checkbox-custom
+// 	margin: 0 12px 0 0
+// 	position: relative
+// 	border-radius: 6px
+// 	background-color: #fff
+// 	width: 16px
+// 	height: 16px
+// 	min-width: 16px
+// 	cursor: pointer
 
-.inp-check:checked ~ .checkbox-custom
-	background: #fff url("../img/check-black.svg") no-repeat center
-	background-size: 8px
+// .inp-check:checked ~ .checkbox-custom
+// 	background: #fff url("../img/check-black.svg") no-repeat center
+// 	background-size: 8px
 //checkbox my end
