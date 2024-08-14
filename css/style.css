@@ -363,6 +363,10 @@ a.color-blue:hover {
   color: #4D9B42;
 }
 
+.color-accent {
+  color: #4D9B42;
+}
+
 .slick-slider {
   width: 100%;
 }

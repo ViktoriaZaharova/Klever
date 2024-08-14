@@ -596,3 +596,103 @@
   min-width: auto;
   white-space: nowrap;
 }
+
+.remote-card {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 50px;
+  border-radius: 40px;
+}
+.remote-card__name {
+  margin: 0 0 50px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+}
+.remote-card__name:hover {
+  color: #4D9B42;
+}
+.remote-card__video {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 292px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.remote-card__video img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.remote-card__video::before {
+  content: "";
+  position: absolute;
+  width: 69px;
+  height: 69px;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: #B1D3AC url("../img/play-icon.svg") no-repeat center;
+  background-size: 17px;
+}
+
+.contacts-box {
+  background: #fff;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 35px rgba(77, 155, 66, 0.01);
+}
+.contacts-box h3 {
+  width: 100%;
+  margin: 0 0 20px;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.contacts-box h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0 0;
+}
+.contacts-box__body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.contacts-box__avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 40px 0 0;
+  width: 55px;
+  height: 55px;
+  min-width: 55px;
+}
+.contacts-box__content {
+  margin: 0 40px 0 0;
+}
+.contacts-box__footer {
+  padding: 0 0 0 40px;
+  border-left: 1px solid #4D9B42;
+}
+.contacts-box__footer a {
+  margin: 0 0 20px;
+  font-size: 20px;
+  color: #292929;
+}
+.contacts-box__footer a:hover {
+  color: #4D9B42;
+}
+.contacts-box__footer a:last-child {
+  margin: 0;
+}
