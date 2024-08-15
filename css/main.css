@@ -651,7 +651,7 @@
   width: fit-content;
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 0 10px 35px rgba(77, 155, 66, 0.01);
+  filter: drop-shadow(0px 10px 35px rgba(77, 155, 66, 0.1));
 }
 .contacts-box h3 {
   width: 100%;
@@ -664,6 +664,12 @@
   font-size: 20px;
   font-weight: 500;
   margin: 10px 0 0;
+}
+.contacts-box p {
+  margin: 0 0 10px;
+}
+.contacts-box p:last-child {
+  margin: 0;
 }
 .contacts-box__body {
   width: 100%;
@@ -685,14 +691,96 @@
   padding: 0 0 0 40px;
   border-left: 1px solid #4D9B42;
 }
-.contacts-box__footer a {
+.contacts-box__link {
   margin: 0 0 20px;
   font-size: 20px;
   color: #292929;
+  white-space: nowrap;
 }
-.contacts-box__footer a:hover {
+.contacts-box__link:last-child {
+  margin: 0;
+}
+.contacts-box__link:hover {
   color: #4D9B42;
 }
-.contacts-box__footer a:last-child {
+.contacts-box__link:hover:last-child {
   margin: 0;
+}
+.contacts-box__address {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px;
+  font-size: 10px;
+}
+.contacts-box__address img {
+  margin: 0 10px 0 0;
+  width: 19px;
+  min-width: 19px;
+}
+
+.contacts-box-company {
+  filter: none;
+  border: 1px solid #4D9B42;
+  background: transparent;
+}
+
+.list-social {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.list-social li {
+  margin: 0 20px 0 0;
+}
+.list-social li:last-child {
+  margin: 0;
+}
+.list-social li a {
+  fill: #B1D3AC;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-social li a:hover {
+  fill: #4D9B42;
+}
+
+.map-wrapper {
+  width: 100%;
+  height: 731px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+}
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contacts-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 50px 0 0;
+}
+
+.developer-logo {
+  max-width: 165px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0 0;
+}
+
+.link-information {
+  text-align: right;
 }

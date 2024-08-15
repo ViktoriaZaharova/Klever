@@ -367,6 +367,13 @@ a.color-blue:hover {
   color: #4D9B42;
 }
 
+a.color-green {
+  color: #B1D3AC;
+}
+a.color-green:hover {
+  color: #4D9B42;
+}
+
 .slick-slider {
   width: 100%;
 }
