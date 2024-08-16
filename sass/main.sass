@@ -630,4 +630,84 @@
 	margin: 0 auto 0 0
 
 .link-information
-	text-align: right	
+	text-align: right
+
+// documentation page
+.content-wrapper-documentation
+	padding: 0
+
+.documentation-head
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	background: #fff
+	border-radius: 40px
+	filter: drop-shadow(0px 10px 50px rgba(#4D9B42, .1))
+	padding: 26px 34px
+	margin: 0 0 34px
+	.nav-tabs
+		margin: 0
+		width: fit-content
+
+.documentation-content
+	width: 100%
+	padding: 0 50px 34px
+
+.form-search
+	max-width: 276px
+	width: 100%
+	position: relative
+	margin-left: auto
+	input
+		height: 43px
+		padding-right: 43px
+	label
+		margin: 0
+	[type='submit']
+		background: transparent
+		width: 23px
+		height: 23px
+		min-width: 23px
+		@include d-flex
+		position: absolute
+		right: 20px
+		top: 10px
+		fill: #66B0F4
+
+.documentation-box
+	width: 100%
+	margin: 0 0 48px
+	&:last-child
+		margin: 0
+
+.documentation-table
+	width: 100%
+	&__head
+		width: 100%
+		display: flex
+		align-items: center
+		margin: 0 0 12px
+		background: #fff
+		border-radius: 12px
+		padding: 15px 30px
+		filter: drop-shadow(0px 10px 35px rgba(#4D9B42, .1))
+		color: #8A8A8A
+		font-size: 18px
+	.th
+		padding-left: 44px
+		&:first-child
+			padding: 0
+	&__body
+		width: 100%
+	.tr
+		background: #fff
+		border-radius: 20px
+		border: 1px solid #B1D3AC
+		padding: 20px 30px
+		display: flex
+		align-items: center
+		p
+			margin: 0 0 34px
+			&:last-child
+				margin: 0

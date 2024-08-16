@@ -25,7 +25,7 @@
 
 <body>
 
-	<section class="main page main-remote">
+	<section class="main main-documentation">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12 col-lg-3 col-xl-2">
@@ -119,11 +119,11 @@
 					<div class="content">
 						<div class="header">
 							<div class="header-title">
-								<h1>Удалённый контроль</h1>
+								<h1>документация</h1>
 								<nav aria-label="breadcrumb" class="breadcrumb-nav">
 									<ol class="breadcrumb">
 										<li class="breadcrumb-item"><a href="home.html">Главная</a></li>
-										<li class="breadcrumb-item active" aria-current="page">Удалённый контроль</li>
+										<li class="breadcrumb-item active" aria-current="page">Документация</li>
 									</ol>
 								</nav>
 							</div>
@@ -177,41 +177,101 @@
 
 						</div>
 
-						<div class="content-wrapper">
+						<div class="content-wrapper content-wrapper-documentation">
 							<div class="content-section">
+
 								<div class="row">
 									<div class="col-12">
-										<h2 class="color-accent">Видеонаблюдение</h2>
-									</div>
-								</div>
+										<div class="documentation-head">
+											<ul class="nav nav-tabs" role="tablist">
+												<li class="nav-item" role="presentation">
+													<button class="nav-link active" id="1-tab" data-bs-toggle="tab"
+														data-bs-target="#1-tab-pane" type="button" role="tab"
+														aria-controls="1-tab-pane" aria-selected="true">Все</button>
+												</li>
+												<li class="nav-item" role="presentation">
+													<button class="nav-link" id="2-tab" data-bs-toggle="tab"
+														data-bs-target="#2-tab-pane" type="button" role="tab"
+														aria-controls="2-tab-pane" aria-selected="false">Документация</button>
+												</li>
+												<li class="nav-item" role="presentation">
+													<button class="nav-link" id="3-tab" data-bs-toggle="tab"
+														data-bs-target="#3-tab-pane" type="button" role="tab"
+														aria-controls="3-tab-pane" aria-selected="false">Договора</button>
+												</li>
+											</ul>
+											<form method="post" class="form-search">
+												<label><input type="text" placeholder="Поиск по документам" name="seach"></label>
+												<button type="submit" class="btn-search">
+													<svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#search"></use>
+													</svg>
+												</button>
+											</form>
+										</div>
 
-								<div class="row">
-									<div class="col-12 col-sm-6 mb-20">
-										<div class="remote-card">
-											<a href="#" class="remote-card__name">Камера во дворе</a>
-											<a href="https://youtu.be/njX2bu-_Vw4?si=bDqAlJ8Ka1VI9Hhy" data-fancybox="gallery-video" class="remote-card__video"><img src="img/video-preview3.jpg" alt=""></a>
-										</div>
-									</div>
-								
-									<div class="col-12 col-sm-6 mb-20">
-										<div class="remote-card">
-											<a href="#" class="remote-card__name">Камера во дворе</a>
-											<a href="https://youtu.be/njX2bu-_Vw4?si=bDqAlJ8Ka1VI9Hhy" data-fancybox="gallery-video" class="remote-card__video"><img src="img/video-preview3.jpg" alt=""></a>
-										</div>
-									</div>
+										<div class="documentation-content">
+											<div class="tab-content">
+												<div class="tab-pane fade show active" id="1-tab-pane" role="tabpanel"
+													aria-labelledby="1-tab" tabindex="0">
+													<div class="row">
+														<div class="col-12 col-lg-11">
+															<div class="documentation-box">
+																<h3 class="h2">Договор на строительство</h3>
+		
+																<div class="table-responsive">
+																	<div class="documentation-table">
+																		<div class="documentation-table__head">
+																			<div class="th">Статус</div>
+																			<div class="th">Дата</div>
+																			<div class="th">Исполнитель</div>
+																			<div class="th">Стоимость</div>
+																			<div class="th">Файлы</div>
+																		</div>
+																		<div class="documentation-table__body">
+																			<div class="tr">
+																				<div class="td">
+																					<div class="documentation-table__status status-online">в работе</div>
+																				</div>
+																				<div class="td">
+																					<p>05.01.2024 - 05.04.2024</p>
+																				</div>
+																				<div class="td">
+																					<p>Новелов Андрей</p>
+																				</div>
+																				<div class="td">
+																					<p>564 000 ₽ <span class="sum-total">всего</span></p>
+																					<p>345 000 ₽ <span class="sum-paid">оплачено</span></p>
+																				</div>
+																				<div class="td">
+																					<a href="#" class="documentation-table__file">3 файла <svg
+																							class="svg-icon">
+																							<use xlink:href="img/sprite.svg#view-icon"></use>
+																						</svg></a>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													
+												</div>
 
-									<div class="col-12 col-sm-6 mb-20">
-										<div class="remote-card">
-											<a href="#" class="remote-card__name">Камера во дворе</a>
-											<a href="https://youtu.be/njX2bu-_Vw4?si=bDqAlJ8Ka1VI9Hhy" data-fancybox="gallery-video" class="remote-card__video"><img src="img/video-preview3.jpg" alt=""></a>
-										</div>
-									</div>
+												<div class="tab-pane fade" id="2-tab-pane" role="tabpanel" aria-labelledby="2-tab"
+													tabindex="0">
+													2
+												</div>
 
-									<div class="col-12 col-sm-6 mb-20">
-										<div class="remote-card">
-											<a href="#" class="remote-card__name">Камера во дворе</a>
-											<a href="https://youtu.be/njX2bu-_Vw4?si=bDqAlJ8Ka1VI9Hhy" data-fancybox="gallery-video" class="remote-card__video"><img src="img/video-preview3.jpg" alt=""></a>
+												<div class="tab-pane fade" id="3-tab-pane" role="tabpanel" aria-labelledby="3-tab"
+													tabindex="0">
+													3
+												</div>
+											</div>
 										</div>
+
+
 									</div>
 								</div>
 							</div>

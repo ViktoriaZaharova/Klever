@@ -515,3 +515,7 @@ a.color-green:hover {
   opacity: 0;
   transition: 0.3s ease;
 }
+
+.table-responsive {
+  width: 100%;
+}

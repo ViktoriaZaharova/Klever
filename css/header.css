@@ -167,6 +167,24 @@
   margin: 0 12px 0 0;
   fill: #4D9B42;
 }
+.menu-link__text {
+  display: flex;
+  align-items: center;
+}
+.menu-link__value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  border-radius: 50%;
+  background: #B1D3AC;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 0 0 10px;
+}
 .menu-link:hover {
   color: #4D9B42;
 }
@@ -182,7 +200,7 @@
 }
 
 .manager-box {
-  margin: 64px 0 0;
+  margin: 154px 0 0;
   width: 100%;
   padding: 20px 30px;
   font-size: 20px;
