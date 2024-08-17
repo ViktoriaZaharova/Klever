@@ -106,3 +106,13 @@ $('.btn-toggle-reports').on('click', function (e) {
 		$(this).hide();
 	}
 });
+
+$('.btn-toggle-documentation').on('click', function (e) {
+	e.preventDefault();
+	$(this).parents('.documentation-content').find('.documentation-box:hidden').slice(0, 2).slideDown();
+
+	var onBlock = $(this).parents('.documentation-content').find('.documentation-box:hidden').length;
+	if (onBlock <= 0) {
+		$(this).hide();
+	}
+});
